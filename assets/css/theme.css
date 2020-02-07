@@ -8080,7 +8080,7 @@ form .help-block {
   border: 1px solid #eee;
 }
 .section_contact .contact__container__form h3 {
-  margin-bottom: 25px;
+  margin-bottom: 2px;
 }
 .section_contact .contact__container__info {
   width: 100%;
@@ -8312,4 +8312,27 @@ form .help-block {
 .section_layouts + .section_footer {
   background-color: white;
   color: #777;
+}
+
+.social {
+  list-style-type: none;
+  padding-inline-start:0px ;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 2px;
+  text-align: center;
+}
+
+.social a {
+  border: 2px solid #33373d;
+  color: #33373d;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  line-height: 35px;
+  text-align: center;
+    
 }
