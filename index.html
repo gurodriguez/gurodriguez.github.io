@@ -1,1 +1,564 @@
-hola mundo
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>My Professional Profile</title>
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="assets/plugins/ionicons/css/ionicons.min.css">
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  </head>
+  <body data-spy="scroll" data-target="#navbar_main" data-offset="80">
+
+    <!-- PRELOADER
+    ================================================== -->
+    <div class="preloader">
+      <img src="assets/img/spinner.svg" alt="Loading..." class="preloader__spinner">
+    </div>
+
+    <!-- MODAL
+    ================================================== -->
+    <div class="modal fade" id="modal_portfolio" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio__heading">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modal_portfolio__heading"></h4>
+          </div>
+          <div class="modal-body">
+            <img id="modal_portfolio__img" class="img-responsive" src="assets/img/1.jpg" alt="...">
+            <p id="modal_portfolio__content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+    
+        <!-- Brand name -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Who Am I?</a>
+        </div>
+    
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbar_main">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#section_banner">Welcome</a>
+            </li>
+            <li><a href="#section_about">About me</a></li>
+            <li><a href="#section_portfolio">My portfolio</a></li>
+            <li><a href="#section_skills">My skills</a></li>          
+            <li><a href="#section_experience">My experience</a></li>
+            <li><a href="#section_contact">Contact me</a></li>
+          </ul>
+    
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <!-- BANNER
+    ================================================== -->
+    <section class="section_banner" id="section_banner">
+
+      <!-- Images -->
+      <div class="banner__carousel__img" 
+           data-images="assets/img/fondo.jpg">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+      
+            <h1 class="h0 page-header text-white text-center animate-down animate-xs-step-0">
+              Hi, my name is <span>Gabriel Rodríguez</span>
+            </h1>
+            <p class="page-subheader text-white-muted text-center animate-down animate-xs-step-1">
+              FULL STACK / HYBRID MOBILE /  DEVELOPER
+            </p>
+            <div class="text-center">
+              <a href="#section_about" class="btn btn-primary animate-down animate-xs-step-2">
+                More about me
+              </a>
+            </div>
+      
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="section_about" id="section_about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              This is <span>what I do</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+              Full Stack Developer with 7+ years of experience developing web and hybrid mobile applications and around 12 years working in the development of Information Systems. Self Taught and loving to code.
+<br><br>
+             If building a web site for your business, a shopping web site or building complex geospatial and data system we can do it together.  
+             
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- PORTFOLIO
+    ================================================== -->
+    <section class="section_portfolio" id="section_portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center sr-only">
+              A picture paints a <span>thousand</span> words
+            </h2>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="assets/img/todosSantos.png" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                   Todos Santos App
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Todos Santos App" data-img="assets/img/todosSantos.png" data-content="Map and Directory App guide for visitor at Todos Santos, Baja California Sur, México">
+                      More Info
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="assets/img/vendeGob.png" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                   VendeGob
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="VendeGob" data-img="assets/img/vendeGob.png" data-content="Shopping market place for Gouverment at Quintana Roo.">
+                     More Info
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="assets/img/subasta.png" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Catálogo de Subasta
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Catálogo de Subasta" data-img="assets/img/subasta.png" data-content="Auction showcase for Gouverment sales at Quintana Roo.">
+                     More Info
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="assets/img/signo.png" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    SIGNO
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="SIGNO" data-img="assets/img/signo.png" data-content="SIGNO is a Geospatial System that helps to improve delivery paper notifications using maps at Justice Palace in Quintana Roo.">
+                     More Info
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="assets/img/utrm_conectada.png" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    UTRM Conectada
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="UTRM Conectada" data-img="assets/img/utrm_conectada.png" data-content="Website with video tutorials at Rivera Maya Tech University">
+                      More Info
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="assets/img/tutorias.png" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Tutorías at UTRM
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Kanan Tutorías" data-img="assets/img/tutorias.png" data-content="System that helps professors with their students in the process of advice and guide at  Rivera Maya Tech University.">
+                      More Info
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container-fluid -->
+    </section>
+
+    <!-- SKILLS
+    ================================================== -->
+    <section class="section_skills" id="section_skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <h2 class="page-header text-center">
+              My key <span>skills</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+              Major skills that will help us create Websites, Geospatial Information Systems or Mobile Apps.
+            </p>
+
+          </div>
+        </div>
+        <div class="row row_centered">
+          <div class="col-sm-6">
+            
+            <p>
+              Since my beginning as a Web Developer I used different technologies to solve the problems.
+            </p>
+            <p>
+              We find the correct solution for your business by implementing web sites using WordPress or Joomla, developing with the use of plain PHP or CakePHP as a Framework, using Google Maps for Geospatial system or Ionic Framework to Develop Apps.  
+            </p>
+    
+          </div>
+          <div class="col-sm-6">
+            
+            <div class="skills__item">
+              <h3 class="skills__item__heading">Design <small>70%</small></h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" data-animate="animate-progress">
+                </div>
+              </div> <!-- / .progress -->
+            </div> <!-- / .skills__item -->
+
+            <div class="skills__item">
+              <h3 class="skills__item__heading">Web Development  <small>90%</small></h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%;" data-animate="animate-progress">
+                </div>
+              </div> <!-- / .progress -->
+            </div> <!-- / .skills__item -->
+
+            <div class="skills__item">
+              <h3 class="skills__item__heading">Implementing Web Sites <small>85%</small></h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;" data-animate="animate-progress">
+                </div>
+              </div> <!-- / .progress -->
+            </div> <!-- / .skills__item -->
+
+            <div class="skills__item">
+              <h3 class="skills__item__heading">Mobile App Developer <small>80%</small></h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" data-animate="animate-progress">
+                </div>
+              </div> <!-- / .progress -->
+            </div> <!-- / .skills__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- EXPERIENCE
+    ================================================== -->
+    <section class="section_experience section_alt" id="section_experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              My <span>experience</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+           A couple of lines about my experience.
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+        
+
+          </div>
+          <div class="col-sm-12">
+            
+            <ul class="experience__timeline">
+              <li data-animate="animate-up">
+                <div class="experience__timeline__logo">
+                  <i class="ion-android-person"></i>
+                </div>
+                <div class="experience__timeline__content">
+                  <h3 class="experience__timeline__heading">
+                   Oficialía Mayor, Government of Quintana Roo.
+                  </h3>
+                  <div class="experience__timeline__position">
+                    Technology Manager
+                  </div>
+                  <div class="experience__timeline__description">
+                  Manager of Technology for the Government IT Department of the Quintana Roo State, Mexico. Implementing systems in the human and material resources areas.
+                  </div>
+                </div>
+              </li>
+              <li data-animate="animate-up">
+                <div class="experience__timeline__logo">
+                  <i class="ion-university"></i>
+                </div>
+                <div class="experience__timeline__content">
+                  <h3 class="experience__timeline__heading">
+                   UNID
+                  </h3>
+                  <div class="experience__timeline__position">
+                   IT Teacher
+                  </div>
+                  <div class="experience__timeline__description">
+                    University professor at Universidad Interamericana para el Desarrollo.
+                  </div>
+                </div>
+              </li>
+             
+              <li data-animate="animate-up">
+                <div class="experience__timeline__logo">
+                  <i class="ion-android-person"></i>
+                </div>
+                <div class="experience__timeline__content">
+                  <h3 class="experience__timeline__heading">
+                    Freelancer
+                  </h3>
+                  <div class="experience__timeline__position">
+                    Full-stack developer
+                  </div>
+                  <div class="experience__timeline__description">
+                    Developing Websites, web systems, Mobile Apps, Geospatial Information Systems and much more.
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CONTACT
+    ================================================== -->
+    <section class="section_contact" id="section_contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              Get in touch <span>with me</span>
+            </h2>
+
+            <p class="page-subheader text-white-muted text-center">
+              Do not hesitate to drop me a couple of lines.
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <div class="contact__container">
+              <div class="row">
+                <div class="col-sm-8">
+                  
+                  <!-- Form -->
+                  <form class="contact__container__form" id="form_sendemail">
+                    
+                    <!-- Header -->
+                    <div class="form-group">
+                      <h3>Send me a message</h3>
+                    </div>
+
+                    <!-- Alert message -->
+                    <div class="alert" id="form_message" role="alert"></div>
+                    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Email address *</label>
+                      <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address">
+                      <span class="help-block"></span>
+                    </div>
+                    
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label for="name" class="sr-only">Name *</label>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+                      <span class="help-block"></span>
+                    </div>
+                    
+                    <!-- Message -->
+                    <div class="form-group">
+                      <label for="message" class="sr-only">Message *</label>
+                      <textarea name="message" class="form-control" id="message" placeholder="Enter your message"></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LeQxScUAAAAAHrdwVSNXZNubLvoigwxc_aEE9G0"></div><br>
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary">
+                      Send Message
+                    </button>
+
+                  </form>
+
+                </div>
+                <div class="col-sm-4">
+                  
+                  <ul class="contact__container__info">
+                    <li>
+                      <h3>Contact info</h3>
+                    </li>
+                    <li>
+                      <i class="ion-android-pin"></i>
+                      <p>
+                        Chetumal <br>
+                       Quintana Roo, México.
+                      </p>
+                    </li>
+                   
+                    <li>
+                      <i class="ion-android-mail"></i>
+                      <p>
+                        <a href="mailto:admin@domain.com">contact@oxtan-tech.com</a>
+                      </p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="section_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+    
+            <p class="footer__copyright">
+              <span id="footer__year">2017</span> &copy; Developing with passion!.
+            </p>
+    
+          </div>
+          <div class="col-sm-3">
+            
+            <ul class="footer__social">
+              <li>
+                <a class="twitter" href="https://twitter.com/gurodrig" target="_blank">
+                  <i class="ion-social-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="http://www.linkedin.com/in/gabriel-rodríguez-b19aa155" target="_blank">
+                  <i class="ion-social-linkedin-outline"></i>
+                </a>
+              </li>
+             
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+
+    <!-- JS Global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- JS Plugins -->
+    <script src="assets/plugins/smoothscroll/smoothscroll.min.js"></script>
+    <script src="assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+    <script src="assets/plugins/contact-form/contact.js"></script>
+    <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- JS Custom -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
